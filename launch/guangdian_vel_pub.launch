@@ -1,0 +1,7 @@
+<launch>
+  <!-- 打开guangdian节点,输出到屏幕 -->
+  <node pkg="A_test_pkg" type="guangdian_publisher.cpp" name="gd_vel_pub"  output="screen">
+    <!-- 重命名消息 -->
+    <remap from="gd_vel_pub/cmd_vel" to="/cmd_vel"/>
+  </node>
+</launch>
